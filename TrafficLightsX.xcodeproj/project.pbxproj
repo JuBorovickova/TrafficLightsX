@@ -3,27 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A3650D6526E23A87007C5097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3650D6426E23A87007C5097 /* AppDelegate.swift */; };
 		A3650D6726E23A87007C5097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3650D6626E23A87007C5097 /* SceneDelegate.swift */; };
-		A3650D6926E23A87007C5097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3650D6826E23A87007C5097 /* ViewController.swift */; };
-		A3650D6C26E23A87007C5097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3650D6A26E23A87007C5097 /* Main.storyboard */; };
+		A3650D6926E23A87007C5097 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3650D6826E23A87007C5097 /* MainViewController.swift */; };
 		A3650D6E26E23A8D007C5097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3650D6D26E23A8D007C5097 /* Assets.xcassets */; };
 		A3650D7126E23A8D007C5097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3650D6F26E23A8D007C5097 /* LaunchScreen.storyboard */; };
+		A3650D7A26E2631B007C5097 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3650D7926E2631B007C5097 /* SnapKit */; };
+		A3650D7D26E26403007C5097 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A3650D7C26E26403007C5097 /* RxSwift */; };
+		A3650D7F26E26403007C5097 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A3650D7E26E26403007C5097 /* RxRelay */; };
+		A3650D8126E26403007C5097 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A3650D8026E26403007C5097 /* RxCocoa */; };
+		A3650D8326E26403007C5097 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = A3650D8226E26403007C5097 /* RxBlocking */; };
+		A3650D8526E66C8C007C5097 /* TrafficLightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3650D8426E66C8C007C5097 /* TrafficLightsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3650D6126E23A87007C5097 /* TrafficLightsX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLightsX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3650D6426E23A87007C5097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3650D6626E23A87007C5097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3650D6826E23A87007C5097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A3650D6B26E23A87007C5097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3650D6826E23A87007C5097 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A3650D6D26E23A8D007C5097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3650D7026E23A8D007C5097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3650D7226E23A8D007C5097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3650D8426E66C8C007C5097 /* TrafficLightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3650D7F26E26403007C5097 /* RxRelay in Frameworks */,
+				A3650D7D26E26403007C5097 /* RxSwift in Frameworks */,
+				A3650D8126E26403007C5097 /* RxCocoa in Frameworks */,
+				A3650D7A26E2631B007C5097 /* SnapKit in Frameworks */,
+				A3650D8326E26403007C5097 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +68,11 @@
 			children = (
 				A3650D6426E23A87007C5097 /* AppDelegate.swift */,
 				A3650D6626E23A87007C5097 /* SceneDelegate.swift */,
-				A3650D6826E23A87007C5097 /* ViewController.swift */,
-				A3650D6A26E23A87007C5097 /* Main.storyboard */,
+				A3650D6826E23A87007C5097 /* MainViewController.swift */,
 				A3650D6D26E23A8D007C5097 /* Assets.xcassets */,
 				A3650D6F26E23A8D007C5097 /* LaunchScreen.storyboard */,
 				A3650D7226E23A8D007C5097 /* Info.plist */,
+				A3650D8426E66C8C007C5097 /* TrafficLightsView.swift */,
 			);
 			path = TrafficLightsX;
 			sourceTree = "<group>";
@@ -83,6 +93,13 @@
 			dependencies = (
 			);
 			name = TrafficLightsX;
+			packageProductDependencies = (
+				A3650D7926E2631B007C5097 /* SnapKit */,
+				A3650D7C26E26403007C5097 /* RxSwift */,
+				A3650D7E26E26403007C5097 /* RxRelay */,
+				A3650D8026E26403007C5097 /* RxCocoa */,
+				A3650D8226E26403007C5097 /* RxBlocking */,
+			);
 			productName = TrafficLightsX;
 			productReference = A3650D6126E23A87007C5097 /* TrafficLightsX.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +127,10 @@
 				Base,
 			);
 			mainGroup = A3650D5826E23A87007C5097;
+			packageReferences = (
+				A3650D7826E2631B007C5097 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A3650D7B26E26403007C5097 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = A3650D6226E23A87007C5097 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +147,6 @@
 			files = (
 				A3650D7126E23A8D007C5097 /* LaunchScreen.storyboard in Resources */,
 				A3650D6E26E23A8D007C5097 /* Assets.xcassets in Resources */,
-				A3650D6C26E23A87007C5097 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +157,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3650D6926E23A87007C5097 /* ViewController.swift in Sources */,
+				A3650D6926E23A87007C5097 /* MainViewController.swift in Sources */,
 				A3650D6526E23A87007C5097 /* AppDelegate.swift in Sources */,
 				A3650D6726E23A87007C5097 /* SceneDelegate.swift in Sources */,
+				A3650D8526E66C8C007C5097 /* TrafficLightsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A3650D6A26E23A87007C5097 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3650D6B26E23A87007C5097 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A3650D6F26E23A8D007C5097 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ju.TrafficLightsX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ju.TrafficLightsX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +352,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3650D7826E2631B007C5097 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		A3650D7B26E26403007C5097 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3650D7926E2631B007C5097 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3650D7826E2631B007C5097 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A3650D7C26E26403007C5097 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3650D7B26E26403007C5097 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		A3650D7E26E26403007C5097 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3650D7B26E26403007C5097 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		A3650D8026E26403007C5097 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3650D7B26E26403007C5097 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A3650D8226E26403007C5097 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3650D7B26E26403007C5097 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3650D5926E23A87007C5097 /* Project object */;
 }
