@@ -9,6 +9,14 @@ import UIKit
 import SnapKit
 
 class TrafficLightsView: UIView {
+
+    enum State {
+        case red
+        case yellow
+        case green
+    }
+    
+    private var state: State = .red
     
     private let redView = UIView()
     private let yellowView = UIView()
@@ -50,6 +58,7 @@ class TrafficLightsView: UIView {
             $0.right.left.equalToSuperview()
             $0.top.equalTo(yellowView.snp.bottom).offset(10)
         }
+        updateStateUI()
     }
     
     override func layoutSubviews() {
@@ -57,5 +66,32 @@ class TrafficLightsView: UIView {
         yellowView.layer.cornerRadius = 50
         greenView.layer.cornerRadius = 50
     }
+    
+    private func updateStateUI() {
+        redView.alpha = 0.3
+        yellowView.alpha = 0.3
+        greenView.alpha = 0.3
+        switch state {
+        case .red:
+            redView.alpha = 1
+        case .yellow:
+            yellowView.alpha = 1
+        case .green:
+            greenView.alpha = 1
+        }
+    }
+    
+    func toggle() {
+        switch state {
+        case .red:
+            state = .yellow
+        case .yellow:
+            state = .green
+        case .green:
+            state = .red
+        }
+        updateStateUI()
+    }
 }
+
 
