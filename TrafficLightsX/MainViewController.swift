@@ -13,17 +13,15 @@ class MainViewController: UIViewController {
 
     private let traffidLightsView = TrafficLightsView()
     
-    private let button = UIButton()
+    private let button = Button()
+    
+    //private let button = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-        
-        button.backgroundColor = .orange
-        button.layer.cornerRadius = 8
-        button.setTitle("Нажми же кнопку", for: .normal)
-        
+                
         view.addSubview(traffidLightsView)
         view.addSubview(button)
         
@@ -33,7 +31,7 @@ class MainViewController: UIViewController {
         }
         
         button.snp.makeConstraints {
-            $0.bottom.equalToSuperview().offset(-25)
+            $0.bottom.equalToSuperview().offset(-100)
             $0.height.equalTo(56)
             $0.width.equalTo(200)
             $0.centerX.equalToSuperview()
